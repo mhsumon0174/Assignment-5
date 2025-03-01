@@ -31,7 +31,9 @@ for(const button of buttons){
 
         const pendingTask=parseInt(document.getElementById('pending-task').innerText);
         document.getElementById('pending-task').innerText=pendingTask-1;
-        
+        if(button===buttons[buttons.length-1]){
+            alert('You Have Completed All The Task Successfully')
+        }
     })
 }
 
