@@ -1,8 +1,7 @@
 // live date work
 const liveDate=new Date();
-const format={weekday:'short',month:'short',day:'2-digit',year:'numeric'};
-document.getElementById('live-date').innerHTML=liveDate.toLocaleDateString('en-US',format);
-// random background change work
+
+document.getElementById('live-date').innerHTML=liveDate.toDateString();
 document.getElementById('bg-change-btn').addEventListener('click',function(){
 
     const colors=["yellow","red","green","blue","violet","indigo"];
@@ -21,11 +20,12 @@ document.getElementById('new-page').addEventListener('click',function(){
 const buttons=document.querySelectorAll('.completed-btn')
 for(const button of buttons){
     button.addEventListener('click',function(event){
+
         alert('One Task Completed and Board Updated Successfully')
         event.target.setAttribute('disabled',true)
         const parent=event.target.parentElement.parentElement.parentElement;
         const text=parent.querySelector('h1').innerText;
-        document.getElementById('activity-content').innerHTML+=`<p class="bg-green-100 mb-3">You Have Completed a task named`+ ' ' +text +'at'+ Date();
+        document.getElementById('activity-content').innerHTML+=`<p class="bg-green-100 mb-3">You Have Completed a task named`+ ' ' +text +' at '+ new Date().toLocaleTimeString();
         const totalTask=parseInt(document.getElementById('total-task').innerText);
         document.getElementById('total-task').innerText=totalTask+1;
 
