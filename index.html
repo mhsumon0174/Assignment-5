@@ -9,10 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class=" max-w-screen-lg mx-auto">
+<body class=" container mx-auto bg-slate-100">
 
     <head>
-        <nav class=" mt-5 flex justify-between shadow-xl p-3 rounded-lg">
+        <nav class=" mt-5 flex justify-between bg-white shadow-lg p-3 rounded-lg">
             <div class="flex items-center gap-2">
                 <img src="assets/logo.png" alt="" class="">
                 <h1 class="text-xl">Dev<span class="font-bold">Board</span></h1>
@@ -30,133 +30,163 @@
 
         </nav>
     </head>
-    <main>
-        <section class="grid grid-cols-4 mt-5 justify-around">
+    <main class=" card-container grid grid-cols-4 gap-6 justify-between">
+        <section class=" col-span-3 mt-5 ">
 
-                    <div class="flex items-center gap-3">
-                        <div><input type="checkbox" checked></div>
-    
-                        <div>
-                            <p>Task Assigned</p>
-                            <h1 class="font-bold">05</h1>
+                    <div class="grid grid-cols-4 gap-3">
+
+
+                        <div class="bg-gray-200 rounded-xl justify-center flex items-center gap-3">
+                            <div><input type="checkbox" checked></div>
+        
+                            <div>
+                                <p>Task Assigned</p>
+                                <h1 class="font-bold">05</h1>
+                            </div>
+                        </div>
+        
+        
+                        <div class="col-span-2 flex items-center justify-center rounded-lg bg-linear-to-r from-blue-200 to-blue-500">
+                            <div><img src="assets/board.png" alt=""></div>
+                            <div>
+                                <h3>Discover Something <br>New Today!</h3>
+                            </div>
+                        </div>
+        
+                        <div class="bg-gray-200 rounded-xl justify-center col-span-1 flex items-center gap-2 p-2">
+                            <div><img src="assets/calender.png" alt=""></div>
+                            <div>
+                                <p id="live-date"></p>
+                            </div>
+        
                         </div>
                     </div>
-    
-    
-                    <div class="flex items-center justify-center rounded-lg bg-linear-to-r from-blue-200 to-blue-500">
-                        <div><img src="assets/board.png" alt=""></div>
-                        <div>
-                            <h3>Discover Something <br>New Today!</h3>
-                        </div>
-                    </div>
-    
-                    <div class="flex items-center">
-                        <div><img src="assets/calender.png" alt=""></div>
-                        <div>
-                            <p id="live-date"></p>
-                        </div>
-    
-                    </div>
-                </div>
+                
                     
     
-                    <div class="grid-cols-1">
-                        <h1>Activity Log</h1>
-                        <button class="btn btn-primary">Clear History</button>
+                    
+            
+
+            <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-5">
+            
+                <div class="  bg-blue-100 rounded-xl p-4">
+                    <h3 class="bg-white rounded-md w-fit p-2">ShopEase</h3>
+                    <h1 class="font-bold my-3">Fix Mobile Button Issues</h1>
+                    <p class="bg-white rounded-md p-3">Debug Using Chrome,Devtools and Check for Overlapping</p>
+                    <div class="flex justify-between mt-3">
+                        <div>
+                            <h6>Deadline</h6>
+                        <h3 class="font-bold">21 March,2025</h3>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
                     </div>
+                </div>
+                <div class="  bg-blue-100 rounded-xl p-4">
+                    <h3 class="bg-white rounded-md w-fit p-2">CloudSync</h3>
+                    <h1 class="font-bold my-3">Add Dark Mode</h1>
+                    <p class="bg-white rounded-md p-3">Debug Using Chrome,Devtools and Check for Overlapping</p>
+                    <div class="flex justify-between mt-3">
+                        <div>
+                            <h6>Deadline</h6>
+                        <h3 class="font-bold">21 March,2025</h3>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="  bg-blue-100 rounded-xl p-4">
+                    <h3 class="bg-white rounded-md w-fit p-2">SwiftPay</h3>
+                    <h1 class="font-bold my-3">Optimize Home Page</h1>
+                    <p class="bg-white rounded-md p-3">Debug Using Chrome,Devtools and Check for Overlapping</p>
+                    <div class="flex justify-between mt-3">
+                        <div>
+                            <h6>Deadline</h6>
+                        <h3 class="font-bold">21 March,2025</h3>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="  bg-blue-100 rounded-xl p-4">
+                    <h3 class="bg-white rounded-md w-fit p-2">Meta</h3>
+                    <h1 class="font-bold my-3">Add New Emoji</h1>
+                    <p class="bg-white rounded-md p-3">Debug Using Chrome,Devtools and Check for Overlapping</p>
+                    <div class="flex justify-between mt-3">
+                        <div>
+                            <h6>Deadline</h6>
+                        <h3 class="font-bold">21 March,2025</h3>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="  bg-blue-100 rounded-xl p-4">
+                    <h3 class="bg-white rounded-md w-fit p-2">Google LLC</h3>
+                    <h1 class="font-bold my-3">Integrate OpenAL API</h1>
+                    <p class="bg-white rounded-md p-3">Debug Using Chrome,Devtools and Check for Overlapping</p>
+                    <div class="flex justify-between mt-3">
+                        <div>
+                            <h6>Deadline</h6>
+                        <h3 class="font-bold">21 March,2025</h3>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="  bg-blue-100 rounded-xl p-4">
+                    <h3 class="bg-white rounded-md w-fit p-2">GlassDoar</h3>
+                    <h1 class="font-bold my-3">Improve job Searching</h1>
+                    <p class="bg-white rounded-md p-3">Debug Using Chrome,Devtools and Check for Overlapping</p>
+                    <div class="flex justify-between mt-3">
+                        <div>
+                            <h6>Deadline</h6>
+                        <h3 class="font-bold">21 March,2025</h3>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
 
         </section>
 
-        <section class="grid grid-cols-3 gap-3 mt-5">
+        
+
+        <section class="col-span-1 mt-5 text-center bg-white rounded-xl">
             
-            <div class="  bg-gray-200 rounded-xl p-4">
-                <h3 class="bg-white rounded-md w-fit p-2">ShopEase</h3>
-                <h1 class="font-bold my-3">Fix Mobile Button Issues</h1>
-                <p class="bg-white rounded-md p-3">Debug Using Chrome,Devtools and Check for Overlapping</p>
-                <div class="flex justify-between mt-3">
-                    <div>
-                        <h6>Deadline</h6>
-                    <h3 class="font-bold">21 March,2025</h3>
-                    </div>
-                    <div>
-                        <button class="btn btn-primary">Completed</button>
-                    </div>
-                </div>
-            </div>
-            <div class="  bg-gray-200 rounded-xl p-4">
-                <h3 class="bg-white rounded-md w-fit p-2">CloudSync</h3>
-                <h1 class="font-bold my-3">Add Dark Mode</h1>
-                <p class="bg-white rounded-md p-3">Debug Using Chrome,Devtools and Check for Overlapping</p>
-                <div class="flex justify-between mt-3">
-                    <div>
-                        <h6>Deadline</h6>
-                    <h3 class="font-bold">21 March,2025</h3>
-                    </div>
-                    <div>
-                        <button class="btn btn-primary">Completed</button>
-                    </div>
-                </div>
-            </div>
-            <div class="  bg-gray-200 rounded-xl p-4">
-                <h3 class="bg-white rounded-md w-fit p-2">SwiftPay</h3>
-                <h1 class="font-bold my-3">Optimize Home Page</h1>
-                <p class="bg-white rounded-md p-3">Debug Using Chrome,Devtools and Check for Overlapping</p>
-                <div class="flex justify-between mt-3">
-                    <div>
-                        <h6>Deadline</h6>
-                    <h3 class="font-bold">21 March,2025</h3>
-                    </div>
-                    <div>
-                        <button class="btn btn-primary">Completed</button>
-                    </div>
-                </div>
-            </div>
-            <div class="  bg-gray-200 rounded-xl p-4">
-                <h3 class="bg-white rounded-md w-fit p-2">Meta</h3>
-                <h1 class="font-bold my-3">Add New Emoji</h1>
-                <p class="bg-white rounded-md p-3">Debug Using Chrome,Devtools and Check for Overlapping</p>
-                <div class="flex justify-between mt-3">
-                    <div>
-                        <h6>Deadline</h6>
-                    <h3 class="font-bold">21 March,2025</h3>
-                    </div>
-                    <div>
-                        <button class="btn btn-primary">Completed</button>
-                    </div>
-                </div>
-            </div>
-            <div class="  bg-gray-200 rounded-xl p-4">
-                <h3 class="bg-white rounded-md w-fit p-2">Google LLC</h3>
-                <h1 class="font-bold my-3">Integrate OpenAL API</h1>
-                <p class="bg-white rounded-md p-3">Debug Using Chrome,Devtools and Check for Overlapping</p>
-                <div class="flex justify-between mt-3">
-                    <div>
-                        <h6>Deadline</h6>
-                    <h3 class="font-bold">21 March,2025</h3>
-                    </div>
-                    <div>
-                        <button class="btn btn-primary">Completed</button>
-                    </div>
-                </div>
-            </div>
-            <div class="  bg-gray-200 rounded-xl p-4">
-                <h3 class="bg-white rounded-md w-fit p-2">GlassDoar</h3>
-                <h1 class="font-bold my-3">Improve job Searching</h1>
-                <p class="bg-white rounded-md p-3">Debug Using Chrome,Devtools and Check for Overlapping</p>
-                <div class="flex justify-between mt-3">
-                    <div>
-                        <h6>Deadline</h6>
-                    <h3 class="font-bold">21 March,2025</h3>
-                    </div>
-                    <div>
-                        <button class="btn btn-primary">Completed</button>
-                    </div>
-                </div>
+            <div class="flex justify-center my-3 ">
+                <img src="assets/activity.png" alt="" class="mr-2">
+                <h1 class="">Activity Log</h1>
             </div>
             
+            
+            <button class="btn btn-primary">Clear History</button>
         </section>
     </main>
+
+    <br><br><br><br>
+
+
+
+    <section class="main-container grid grid-cols-5">
+        <div class="main-card grid-cols-4">
+
+        </div>
+
+        <div class="activity-log">
+
+
+        </div>
+
+    </section>
 
 
 
