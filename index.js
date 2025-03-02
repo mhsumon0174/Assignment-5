@@ -4,7 +4,7 @@ const liveDate=new Date();
 document.getElementById('live-date').innerHTML=liveDate.toDateString();
 document.getElementById('bg-change-btn').addEventListener('click',function(){
 
-    const colors=["yellow","red","green","blue","violet","indigo"];
+    const colors=["yellow","red","green","blue","violet","indigo","cyan","teal","olive"];
     
     document.getElementById('bg-change-body').style.background=colors[Math.floor(Math.random()*colors.length)];
 })
@@ -25,7 +25,7 @@ for(const button of buttons){
         event.target.setAttribute('disabled',true)
         const parent=event.target.parentElement.parentElement.parentElement;
         const text=parent.querySelector('h1').innerText;
-        document.getElementById('activity-content').innerHTML+=`<p class="bg-green-100 mb-3">You Have Completed a task named`+ ' ' +text +' at '+ new Date().toLocaleTimeString();
+        document.getElementById('activity-content').innerHTML+=`<p class="bg-gray-200 mb-3 p-1 rounded-lg">You Have Completed a task named`+ ' ' +text +' at '+ new Date().toLocaleTimeString();
         const totalTask=parseInt(document.getElementById('total-task').innerText);
         document.getElementById('total-task').innerText=totalTask+1;
 
